@@ -1,0 +1,146 @@
+/*default formatting*/
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 600;
+}
+/*main palete for body, header and footer, updated for accessibility*/
+.light {
+  background-color: #ffffff;
+  color: #003b49;
+}
+
+.dark {
+  background-color: #003b49;
+  color: white;
+  padding: 24px 0px 2px 0px;
+}
+/*---------------------------------------*/
+
+/*Centers content within main*/
+.wrapper {
+  width: 600px;
+  margin: auto;
+}
+/*---------------------------------------*/
+
+/*This code block adds appropriate margins to sections. The first section was tricky because there's
+an h2 element above it, had to apply different margins to it than the rest. The bottom class (added to each
+subsequent section gives them a little more breathing room*/
+section{
+  margin: 0px 0px 84px 0px;
+}
+
+.bottom{
+  margin: 64px 0px 84px 0px;
+}
+
+
+/*centers content within sections*/
+.center-text {
+  text-align: center;
+}
+/*---------------------------------------*/
+
+/*image formatting. Decided to go with a greyscale image because of its relativley low quality. Def should
+find a better and more professional picture*/
+img {
+  width: 600px;
+  height: 600px;
+  margin-bottom: 16px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+/*---------------------------------------*/
+
+/*text formatting*/
+h1 {
+  font-size: 72px;
+  margin: 0px 0px 6px 0px;
+}
+
+.intro-heading{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+/*added the importante class to a single h2 element containing the subject's name to help with SEO*/
+h2,
+.importante {
+  margin: 24px 0 24px 0;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 8px 0 12px 0;
+}
+
+p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.text {
+  /*a class for a span element within an anchor. Had trouble maintaining the color otherwise. Is there a better way?*/
+  color: purple;
+}
+
+.justify-left {
+  /*a class applied to elements within sections to justify text to the left*/
+  text-align: left;
+}
+/*---------------------------------------*/
+
+/*list styling. Had to mess with the padding of each ul and ol element because their respective li elements were
+indented too far and looked strange*/
+ul,
+ol {
+  list-style-position: inside;
+  padding-left: 16px;
+  line-height: 32px;
+}
+
+li,
+li a,
+.text {
+  font-size: 20px;
+}
+/*---------------------------------------*/
+
+/*anchor styling. Decided to go with no text decoration for anchor elements. I felt like having the links
+underlined looked bad*/
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: #800080;
+}
+/*This code makes each anchor tag go oblique when hovered over*/
+a:hover,
+a .text:hover {
+  color: #aea3b1;
+  font-style: oblique;
+}
+
+a:active {
+  color: red;
+}
+/*---------------------------------------*/
+
+/*misc.*/
+hr {
+  border: 1px solid;
+}
+/*---------------------------------------*/
+
+/*class used to fill footer with background color. I'm sure there's a better way to do this*/
+.foot {
+  padding: 32px 0px 32px 0px;
+}
